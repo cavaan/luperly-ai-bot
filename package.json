@@ -1,18 +1,21 @@
 {
   "name": "brutal-luperly-bot",
   "version": "1.0.0",
-  "description": "Brutally mean LuperlyAI Discord bot",
+  "description": "A mean LuperlyAI Discord bot",
   "main": "index.js",
-  "type":"module",
   "scripts": {
-    "start": "node index.js"
+    "start": "npm ci --omit=dev && node index.js",
+    "dev": "nodemon index.js"
   },
   "dependencies": {
     "discord.js": "^14.14.0",
     "dotenv": "^16.3.1",
-    "openai": "^4.9.0"
+    "openai": "^4.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=16"
   }
 }
